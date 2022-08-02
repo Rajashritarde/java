@@ -1,0 +1,31 @@
+
+public class TestThread {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      Task task = new Task();
+      Thread thread =new Thread(task);
+      thread.start();
+	}
+	}
+class Task implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		System.out.println("Inside run....");
+		go();
+	}
+	private void go() {
+		System.out.println("Inside go....");
+		more();
+	}
+	private void more() {
+		System.out.println("Inside more....");
+	}
+}
+
+o/p
+Inside run....
+Inside go....
+Inside more....
