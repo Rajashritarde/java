@@ -1,0 +1,24 @@
+package com.semanticsquare.collection;
+
+import java.util.HashMap;
+import java.util.SortedMap;
+import java.util.Map;
+public class TestLanguagesHashMap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+ Map<Integer,String> languages =new HashMap<>();
+		
+		languages.put(1,"java");
+		languages.put(2,"Python");
+		languages.put(3,"JavaScript");
+		languages.put(4,"CoreJava");
+		System.out.println("Class:"+ languages);
+		
+		String value =languages.get(2);
+		System.out.println("Value at index 1:"+value);
+		
+		
+	}
+	}
