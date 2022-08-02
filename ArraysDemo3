@@ -1,0 +1,50 @@
+package com.semanticsquare.collection;
+
+import java.util.ArrayList;
+
+public class ArraysDemo {
+
+
+
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> Name=new ArrayList<>();
+		
+	Name.add("Raj");
+	Name.add("Andi");
+	Name.add("kiru");
+	
+	System.out.println(Name);
+Name.add("Anu");
+System.out.println(Name);
+	
+	Name.add(0," Rov" );                 //add new name
+	System.out.println(Name);
+		
+	
+	System.out.println(Name);
+	Name.remove(2);                 //remove
+	System.out.println(Name);
+	
+	System.out.println(Name);
+     Name.set(0,"kiru");                 //set name replace name
+    System.out.println(Name.get(2));
+	
+	System.out.println(Name);
+	Name.clear();
+	System.out.println(Name);    //clear
+	
+	
+	}
+
+}
+
+
+o/p
+[ Rov, Raj, Andi, kiru, Anu]
+[ Rov, Raj, kiru, Anu]
+[ Rov, Raj, kiru, Anu]
+kiru
+[kiru, Raj, kiru, Anu]
+[]
