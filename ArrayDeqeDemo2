@@ -1,0 +1,31 @@
+package com.semanticsquare.collection;
+
+import java.util.*;
+
+public class ArrayDeqeDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ArrayDeque<String>Name =new ArrayDeque<>();
+		  Name.add("Raj");
+		  Name.add("Kiru");
+		  Name.add("Anu");
+		  
+		  System.out.println(Name);
+		  
+		  Name.add("Andi");         //add 
+		 System.out.println(Name);
+		  
+		 Name.remove();                   //remove FIFO
+		  System.out.println(Name);
+		  
+	}
+
+}
+
+o/p-
+[Raj, Kiru, Anu]
+[Raj, Kiru, Anu, Andi]
+[Kiru, Anu, Andi]
+
