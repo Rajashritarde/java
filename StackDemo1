@@ -1,0 +1,24 @@
+package com.semanticsquare.collection;
+
+import java.util.Stack;
+
+public class StackDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  Stack<String>Name =new Stack<>();
+  Name.push("Raj");
+  Name.push("Kiru");
+  Name.push("Anu");
+  
+  System.out.println(Name);
+  
+  Name.push("Andi");         //add 
+  System.out.println(Name);
+  
+  Name.pop();                   //remove LIFO
+  System.out.println(Name);
+  
+	}
+
+}
