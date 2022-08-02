@@ -1,0 +1,39 @@
+package com.semanticsquare.collection;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class TestHashMapCangingElement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Map<Integer,String>hm1 =new HashMap<>();
+
+		Map<Integer,String>hm2 =new HashMap<>();
+
+		hm1.put(1,"Rj");
+		hm1.put(2,"om");
+		hm1.put(3,"kiru");
+		hm1.put(3, "nik");	
+		
+		
+		hm2.put(new Integer(1), "Rj");
+		hm2.put(new Integer(2),"om");
+		hm2.put(new Integer(3),"kiru");
+		hm2.put(new Integer(4),"nik");
+		
+
+		System.out.println("Initial Map" +hm1);
+		hm1.put(new Integer(2),"Adi");
+		System.out.println("Updated Map" +hm1);  //Update
+		
+		System.out.println(hm1);
+		
+		hm1.remove(new Integer(3));
+		System.out.println(hm1);
+		
+		
+	}
+
+}
